@@ -20,4 +20,7 @@ Two functions are used in this program: pinMode and digitatWrite (official Ardui
 #### pinMode
 The pinMode funciton takes 2 arguments: pin and mode (makes sense, right!?!). The pin argument, an int, denotes which pin on the Arduino board that will be read from/written to. The mode argument describes what action that pin will take during the program (usually INPUT or OUTPUT). 
 
+#### digitalWrite
+The digitalWrite function 2 arguments: the first being the pin on the arduino board to access, and the second being a boolean (HIGH or LOW), which tells the arduino to provide an electrical input to the pin (HIGH) or to provide no electrical input to the pin (LOW).
+
 
