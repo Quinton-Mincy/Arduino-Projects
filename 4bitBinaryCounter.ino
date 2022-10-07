@@ -21,7 +21,7 @@ int binaryArray[][4] = {
                         };
 int rounds = 5;
 int index = 0;
-void binCount() {
+void loop() {
   while(index < rounds){
     //turn all LEDs on at beggining of round
     digitalWrite(redLED,HIGH);
