@@ -1,4 +1,4 @@
-
+//pins in use
 int redLED = 2;
 int greenLED =3;
 int blueLED = 4;
@@ -11,15 +11,15 @@ void setup() {
   pinMode(blueLED, OUTPUT);
   pinMode(whiteLED, OUTPUT);
 }
-//0-15 in 4 bit binary numbers
+
+//0-15 in 4-bit binary numbers
 int binaryArray[][4] = {
                           {0,0,0,0},{0,0,0,1},{0,0,1,0},{0,0,1,1},{0,1,0,0},
                           {0,1,0,1},{0,1,1,0},{0,1,1,1},{1,0,0,0},{1,0,0,1},
                           {1,0,1,0},{1,0,1,1},{1,1,0,0},{1,1,0,1},{1,1,1,0},
                           {1,1,1,1}
                         };
-int binCounter = 0;
-int rounds = 50;
+int rounds = 5;
 int index = 0;
 void binCount() {
   while(index < rounds){
