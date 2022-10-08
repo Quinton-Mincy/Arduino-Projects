@@ -7,7 +7,6 @@ Download Arduino IDE: https://www.arduino.cc/en/software
 
 Circuit Diagram Build: https://www.circuit-diagram.org/
 
-Video Demonstration: https://youtu.be/cTuqyx6IGUA
 
 ## Circuit Diagram
 Basic diagram of the Arduino Circuitry. Wires with color represent positive current from the Arduino to the LEDs, black wires represent connection to ground. Used 330 ohm resistors. Source is 5 volts.
