@@ -1,4 +1,4 @@
-# Arduino-Projects
+# Arduino Bare-Metal Projects
 Introductory Projects For The Arduino Uno
 ***
 Arduino Library Files: https://github.com/arduino/ArduinoCore-avr/tree/master/cores/arduino
