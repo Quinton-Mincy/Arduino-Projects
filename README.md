@@ -15,6 +15,8 @@ Basic diagram of the Arduino Circuitry. Wires with color represent positive curr
 
 Two functions are used in this program: pinMode and digitatWrite (official Arduino documentation: https://www.arduino.cc/reference/en/). The void loop() and void() setup functions are expected in each arduino program. Void setup() is mainly used for pinModes, to declare variables, and to load in libraries. Void loop() is where the main program is executed. Download Arduino IDE: https://www.arduino.cc/en/software
 
+![Screen Shot 2022-10-08 at 10 57 23 PM](https://user-images.githubusercontent.com/73136662/194735576-fbed09ae-451f-4a65-8c97-535891942b26.png)
+
 #### pinMode
 The pinMode funciton takes 2 arguments: pin and mode (makes sense, right!?!). The pin argument, an int, denotes which pin on the Arduino board that will be read from/written to. The mode argument describes what action that pin will take during the program (usually INPUT or OUTPUT). 
 
