@@ -1,4 +1,4 @@
-# Arduino Bare-Metal Projects
+# Arduino Bare-Metal Projects - In Progress
 Introductory Projects For The Arduino Uno
 ***
 
@@ -19,15 +19,16 @@ We will start by comparing the two versions of the Binary counter project: the "
 
 The pinMode funciton takes 2 arguments: pin and mode (makes sense, right!?). The pin argument, an int, denotes which i/o pin on the Arduino board that will be read from/written to. The mode argument describes what action that pin will take during the program (usually INPUT or OUTPUT). Accomplishing the same task, the DDRD macro, representing for the "Data Direction Register" for port D is performing a bit-wise OR operation (https://en.wikipedia.org/wiki/Bitwise_operations_in_C) to determine the data direction of the port pins (input/output). The DDB2-5 macros are bit numbers that the _BV macro is performing a bit-wise left-shift operation on the binary number one with. Taking a look at the this particilar registers architecure: 
 
-![Screen Shot 2022-10-08 at 11 24 05 PM](https://user-images.githubusercontent.com/73136662/194737772-4106bc85-adfa-460e-9e59-1ae7004578d1.png)
+![Screen Shot 2022-10-08 at 11 23 31 PM](https://user-images.githubusercontent.com/73136662/194738315-dcb27950-7431-4d4c-bc72-a9e957e00779.png)
 
-these four bit-wise operations result in the pins D2-D5 on the arduino board, corresponding to pins PD2-PD5 per the microproccessor's port architecure (discussed in Hardware Architecture section), to be designated as output pins, accomplishing the same task as pinMode has done, but by interfacing directly with the hardware. 
+these four bit-wise operations result in the pins D2-D5 on the arduino board, corresponding to pins PD2-PD5 per the microproccessor's port architecure (discussed more in Hardware Architecture section), to be designated as output pins, accomplishing the same task as pinMode has done, but by interfacing directly with the hardware. 
 
+The 2D matrix array in both code snippets are essentially the same, however, the bare metal version contains the bit numbers corresponding to the pins on the register, as opposed to the Arduino IDE code snippet which features only 0's and 1's, corresponding to HIGH and LOW, which we see in this code snippet:
 
-Two functions are used in this program: pinMode and digitatWrite (official Arduino documentation: https://www.arduino.cc/reference/en/). The void loop() and void() setup functions are expected in each arduino program. Void setup() is mainly used for pinModes, to declare variables, and to load in libraries. Void loop() is where the main program is executed. Download Arduino IDE: https://www.arduino.cc/en/software
-
-#### digitalWrite
 The digitalWrite function 2 arguments: the first being the pin on the arduino board to access, and the second being a boolean (HIGH or LOW), which tells the arduino to provide an electrical input to the pin (HIGH) or to provide no electrical input to the pin (LOW).
+
+## Hardware Architecture
+![Screen Shot 2022-10-09 at 12 56 14 AM](https://user-images.githubusercontent.com/73136662/194738783-1f6f266c-20de-4460-bf5a-20fdf96e20c7.png)
 
 
 
