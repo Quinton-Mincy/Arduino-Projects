@@ -29,6 +29,14 @@ The 2D matrix array in both code snippets are essentially the same, however, the
 
 The digitalWrite function 2 arguments: the first being the pin on the arduino board to access, and the second being a boolean (HIGH or LOW), which tells the arduino to provide an electrical input to the pin (HIGH) or to provide no electrical input to the pin (LOW).
 
+## Performance
+
+From a memory standpoint, the bare metal version takes up half as much space! Minimizing memory usage is very important when working with microcontrollers, as there is not much space to begin with. 
+
+![Screen Shot 2022-10-09 at 1 13 31 AM](https://user-images.githubusercontent.com/73136662/194739258-57766f04-7ee9-4ff1-8deb-c24ca3809f4e.png)
+
+![Screen Shot 2022-10-09 at 1 09 40 AM](https://user-images.githubusercontent.com/73136662/194739184-5d6d9f84-11ed-485e-8a7d-d0d9b1dde774.png)
+
 ## Hardware Architecture
 ![Screen Shot 2022-10-09 at 12 56 14 AM](https://user-images.githubusercontent.com/73136662/194738783-1f6f266c-20de-4460-bf5a-20fdf96e20c7.png)
 
