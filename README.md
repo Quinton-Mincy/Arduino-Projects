@@ -25,6 +25,8 @@ these four bit-wise operations result in the pins D2-D5 on the arduino board, co
 
 The 2D matrix array in both code snippets are essentially the same, however, the bare metal version contains the bit numbers corresponding to the pins on the register, as opposed to the Arduino IDE code snippet which features only 0's and 1's, corresponding to HIGH and LOW, which we see in this code snippet:
 
+![Screen Shot 2022-10-09 at 1 06 39 AM](https://user-images.githubusercontent.com/73136662/194739048-c5701b2e-7cc7-4a53-8c38-60d581cf01e7.png)
+
 The digitalWrite function 2 arguments: the first being the pin on the arduino board to access, and the second being a boolean (HIGH or LOW), which tells the arduino to provide an electrical input to the pin (HIGH) or to provide no electrical input to the pin (LOW).
 
 ## Hardware Architecture
