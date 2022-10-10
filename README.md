@@ -51,7 +51,7 @@ To delve deeper into the hardware architecture, take a look at the datasheet for
 
 ## Summary
 
-In this project, we learned the basics of bitwise operations, the hardware architecture of the Arduinno board/ATMEGA 228p microprocessor, and the software architecture of the AVR LibC library. We compared the code of the Arduino and bare metal implementations of this project, and discovered that the Arduino IDE actually builds on top of the ARV LibC library, and uses bare metal instructions that we implemented in our bare metal program. 
+In this project, we learned the basics of bitwise operations, the hardware architecture of the Arduinno board/ATMEGA 228p microprocessor, and the software architecture of the AVR LibC library. We compared the code of the Arduino and bare metal implementations of this project, and discovered that the Arduino IDE actually builds on top of the AVR LibC library, and uses bare metal instructions that we implemented in our bare metal program. 
 
 
 
