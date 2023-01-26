@@ -43,7 +43,7 @@ From a memory standpoint, the bare metal version (top image) takes up half as mu
 ## Hardware Architecture
 ![Screen Shot 2022-10-09 at 12 56 14 AM](https://user-images.githubusercontent.com/73136662/194738783-1f6f266c-20de-4460-bf5a-20fdf96e20c7.png)
 
-As can be seen on the bottom right of the board, pins D2-D5 are the pins that were connected to the LED's for this project. After we disginated them as output pins, as discussed above, we then turned them on and off by setting the pins on port D's data register to either a 1 (on) or 0 (off):
+As can be seen on the bottom right of the board, pins D2-D5 are the pins that were connected to the LED's for this project. After we desginated them as output pins, as discussed above, we then turned them on and off by setting the pins on port D's data register to either a 1 (on) or 0 (off):
 
 ![Screen Shot 2022-10-08 at 11 23 42 PM](https://user-images.githubusercontent.com/73136662/194960792-c444380a-b8a9-431a-9e53-f83b9c5180df.png)
 
